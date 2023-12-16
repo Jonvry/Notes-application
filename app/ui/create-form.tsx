@@ -29,7 +29,7 @@ export default function CreateNote() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await fetch("http://localhost:3000/api/note", {
+      await fetch("https://notes-jonvry.vercel.app/api/note", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

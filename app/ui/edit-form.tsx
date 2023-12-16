@@ -39,7 +39,7 @@ export default function EditNote({ id, title, body }: EditNoteprops) {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     try {
-      await fetch(`http://localhost:3000/api/note/${id}`, {
+      await fetch(` https://notes-jonvry.vercel.app/api/note/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

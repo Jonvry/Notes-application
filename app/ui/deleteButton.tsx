@@ -7,7 +7,7 @@ export default function DeleteButton({ id }: { id: string }) {
 
   const handleDelete = async (id: string) => {
     try {
-      await fetch(`http://localhost:3000/api/note/${id}`, {
+      await fetch(` https://notes-jonvry.vercel.app/api/note/${id}`, {
         method: "Delete",
       });
 
