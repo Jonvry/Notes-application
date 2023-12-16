@@ -1,6 +1,6 @@
 export async function fetchNotes() {
   try {
-    const response = await fetch("http://localhost:3000/api/note", {
+    const response = await fetch("https://notes-jonvry.vercel.app/api/note", {
       cache: "no-store",
     });
 
@@ -17,9 +17,12 @@ export async function fetchNotes() {
 
 export async function fetchNoteById(id: string) {
   try {
-    const response = await fetch(`http://localhost:3000/api/note/${id}`, {
-      cache: "no-store",
-    });
+    const response = await fetch(
+      `https://notes-jonvry.vercel.app/api/note/${id}`,
+      {
+        cache: "no-store",
+      }
+    );
 
     if (!response.ok) {
       throw new Error(`Failed to fetch note ${id}`);
