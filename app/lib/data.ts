@@ -1,6 +1,6 @@
 export async function fetchNotes() {
   try {
-    const response = await fetch("https://notes-jonvry.vercel.app/api/note", {
+    const response = await fetch("https://notes-six-navy.vercel.app/api/note", {
       cache: "no-store",
     });
 
@@ -18,7 +18,7 @@ export async function fetchNotes() {
 export async function fetchNoteById(id: string) {
   try {
     const response = await fetch(
-      `https://notes-jonvry.vercel.app/api/note/${id}`,
+      `https://notes-six-navy.vercel.app/api/note/${id}`,
       {
         cache: "no-store",
       }
