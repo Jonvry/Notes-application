@@ -70,7 +70,7 @@ export default function EditNote({ id, title, body }: EditNoteprops) {
             height={10}
           />
         </button>
-        <form className=" grid gap-4 w-[20rem]">
+        <form onSubmit={handleSubmit} className=" grid gap-4 w-[20rem]">
           <label
             className="grid gap-1 text-base font-medium text-gray-600"
             htmlFor="title"
@@ -105,7 +105,6 @@ export default function EditNote({ id, title, body }: EditNoteprops) {
           <button
             className="bg-blue-500 text-white text-base font-medium py-3 rounded-md sm:py-2"
             type="submit"
-            onClick={handleSubmit}
           >
             Edit
           </button>
